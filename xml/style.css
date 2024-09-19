@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,500;1,6..12,200;1,6..12,500&display=swap');
+
+:root {
+  margin: 0 auto;
+  width: 1200px;
+  font: 200 16px 'Nunito Sans', sans-serif;
+}
+
+:root::before {
+  content: 'Student Roster';
+  display: block;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 24px 0;
+}
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.student {
+  width: 48%;
+  margin-bottom: 24px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.studentName {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.preferredName::before {
+  content: 'Preferred: ';
+  font-weight: 200;
+}
+
+.studentID::before {
+  content: 'ID: ';
+  font-weight: 200;
+}
+
+.email::before {
+  content: 'Email: ';
+  font-weight: 200;
+}
+
+.phone::before {
+  content: 'Phone: ';
+  font-weight: 200;
+}
+
+.yearStatus::before {
+  content: 'Year: ';
+  font-weight: 200;
+}
+
+.GPA::before {
+  content: 'GPA: ';
+  font-weight: 200;
+}
+
+.major::before {
+  content: 'Major: ';
+  font-weight: 200;
+}
+
+.minor::before {
+  content: 'Minor: ';
+  font-weight: 200;
+}
+
+.enrollmentStatus::before {
+  content: 'Enrollment: ';
+  font-weight: 200;
+}
+
+.advisor::before {
+  content: 'Advisor: ';
+  font-weight: 200;
+}
+
+.initialEnrollmentDate::before {
+  content: 'Enrolled: ';
+  font-weight: 200;
+}
+
+.graduationDate::before {
+  content: 'Expected Graduation: ';
+  font-weight: 200;
+}
+
+.student-info {
+  margin-bottom: 4px;
+}

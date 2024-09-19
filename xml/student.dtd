@@ -1,0 +1,36 @@
+<!--contains student elements  -->
+<!ELEMENT students (student+)>
+<!--contains all info about student preferredName is optional because it has a ? -->
+<!ELEMENT student (name, preferredName?, studentID, email, phone, yearStatus, gpa, major, minor, enrollmentStatus, advisor, initialEnrollmentDate, graduationDate)>
+<!--contains first and last middle name is optional -->
+<!ELEMENT name (firstName, middleName?, lastName)>
+<!--contains first name is parsed data -->
+<!ELEMENT firstName (#PCDATA)>
+<!--contains middle name is parsed -->
+<!ELEMENT middleName (#PCDATA)>
+<!--contains last name is parsed data -->
+<!ELEMENT lastName (#PCDATA)>
+<!--contains preferred name is parsed -->
+<!ELEMENT preferredName (#PCDATA)>
+<!--contains  student id parsed-->
+<!ELEMENT studentID (#PCDATA)>
+<!--contains email is parsed  -->
+<!ELEMENT email (#PCDATA)>
+<!--contains phone is parased -->
+<!ELEMENT phone (#PCDATA)>
+<!--contains year is parsed -->
+<!ELEMENT yearStatus (#PCDATA)>
+<!--contains gpa is parsed -->
+<!ELEMENT gpa (#PCDATA)>
+<!--contains major is parsed -->
+<!ELEMENT major (#PCDATA)>
+<!--contains minor is parsed -->
+<!ELEMENT minor (#PCDATA)>
+<!--contains status is parsed -->
+<!ELEMENT enrollmentStatus (#PCDATA)>
+<!--contains advisor is parsed -->
+<!ELEMENT advisor (#PCDATA)>
+<!-- contains initial Enrollment Date-->
+<!ELEMENT initialEnrollmentDate (#PCDATA)>
+<!--contains graduation date  -->
+<!ELEMENT graduationDate (#PCDATA)>
